@@ -1,0 +1,34 @@
+.nav-user-avatar {
+  // width: 1.5em !important;
+  // height: 1.5em !important;
+  height: 30px !important;
+  width: 30px !important;
+  border-radius: 15px !important;
+  border: 4px double #473a58;
+  cursor: pointer;
+  background-color: #ffffff !important;
+}
+
+.navbar {
+  // border-bottom: 2px solid #9d80c3;
+  background-color: #473a58 !important;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  a {
+    color: #ffffff;
+  }
+}
+.nav-logo {
+  font-weight: 700;
+  color: #ffffff !important;
+  .logo {
+    height: 30px;
+    width: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-logo {
+    .hide {
+      display: none !important;
+    }
+  }
+}

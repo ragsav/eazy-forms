@@ -1,0 +1,60 @@
+.response-tab-bar-main {
+  width: 100%;
+  border-bottom: 1px solid #dddddd;
+  .response-tab {
+    overflow: scroll;
+  }
+  ::-webkit-scrollbar {
+    height: 0px;
+  }
+  background-color: white;
+}
+.response-tab-bar-link-active {
+  padding: 14px 10px;
+  text-decoration: none;
+  color: #9d80c3;
+  font-size: 0.95em;
+  border-bottom: 2px solid #9d80c3;
+  margin-right: 16px;
+  display: inline-block;
+
+  white-space: nowrap;
+}
+.response-tab-bar-link-active:hover {
+  color: #9d80c3;
+}
+
+.response-tab-bar-link-inactive {
+  padding: 14px 10px 14px 4px;
+  text-decoration: none;
+  color: #706183;
+  font-size: 0.95em;
+  border-bottom: 2px solid #ffffff;
+  margin-right: 16px;
+  display: inline-block;
+
+  white-space: nowrap;
+}
+.response-tab-bar-link-inactive:hover {
+  color: #90859e;
+  border-bottom: 2px solid #90859e;
+}
+
+@media screen and (max-width: 450px) {
+  .response-tab-bar-link-active {
+    font-size: 0.8em;
+    padding: 8px 6px;
+  }
+  .response-tab-bar-link-active:hover {
+    font-size: 0.8em;
+    padding: 8px 6px;
+  }
+  .response-tab-bar-link-inactive {
+    font-size: 0.8em;
+    padding: 8px 6px;
+  }
+  .response-tab-bar-link-inactive:hover {
+    font-size: 0.8em;
+    padding: 8px 6px;
+  }
+}

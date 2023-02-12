@@ -1,0 +1,109 @@
+.r-tag{
+    font-size: 0.7em !important;
+}
+.responses-ul{
+    padding: 0;
+    list-style-type: none;
+}
+.response-main{
+    width: 100%;
+    border-top: 1px solid #ececec;
+    font-size: 0.95em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    
+}
+.response-main:first-child{
+    border-top: none;
+}
+.response-container{
+    width: 100%;
+    font-size: 0.95em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+
+.response-list-search-bar{
+    max-width: 400px !important;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.response-list-item-left{
+    min-width: 200px;
+    max-width: 300px;
+    width: 100%;
+    height: 100%;
+    text-align: start;
+    padding: 5px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    span{
+        word-wrap: break-word;
+    }
+    .id{
+        background-color: #f1e6ff;
+        padding: 2px 5px;
+        border-radius: 3px;
+    }
+}
+.response-list-item-mid{
+    width: 100%;    
+    height: 100%;
+    text-align: start;
+    padding: 5px;
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .response-display{
+        border: 1px solid #e5e3e7;
+        border-radius: 4px;
+        width: 100%;
+        height: 100%;
+        padding: 5px;
+    }
+    
+
+}
+.response-list-item-right{
+    // width: 20%;
+    background-color: aquamarine;
+    height: 100%;
+}
+
+@media screen and (max-width:750px){
+    .response-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .response-list-item-left{
+        min-width: 200px;
+        max-width: 100%;
+        width: 100%;
+        height: min-content;
+        text-align: start;
+        padding: 5px;
+        font-size: 0.8em;
+        
+        
+        
+    }
+}

@@ -1,0 +1,104 @@
+.question-main-container {
+  width: 100%;
+  padding: 20px;
+}
+
+.question-container {
+  border-radius: 3px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 1px -1px #00000033, 0 1px 1px 0 #00000024,
+    0 1px 3px 0 #0000001f;
+  //   padding: 20px;
+  border: 1px solid #dadce0;
+  .divider {
+    border-top: 1px solid #d7d3dd;
+  }
+  .verticle-divider {
+    border-left: 1px solid #d7d3dd;
+    height: max-content;
+    width: 1px;
+  }
+}
+
+.focused {
+  border: 1px solid #8963bb !important;
+}
+// .MuiSwitch-sizeSmall {
+//   width: 12px !important;
+//   height: 12px !important;
+// }
+.question-footer {
+  border-top: 1px solid #d7d3dd;
+  background-color: #ffffff;
+  border-radius: 0 0 2px 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
+  .footer-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .footer-right {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    border-left: 1px solid #d7d3dd;
+  }
+}
+
+.error-banner-main {
+  border: 1px solid #ff9898;
+  border-radius: 4px;
+  background-color: #fff0f0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8rem !important;
+  span {
+    color: #fc5050;
+    text-align: start;
+  }
+}
+.min-max-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 100%;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  .primary-outline-btn-sm {
+    padding: 5px 10px !important;
+  }
+}
+.add-new-option {
+  max-width: 400px !important;
+  padding: 4px 10px;
+}
+
+.option-input-control {
+  border: 2px solid #fff;
+  outline: none;
+  background-color: #f3eff8;
+  border-radius: 4px 4px;
+  color: #6a6a6a !important;
+  font-size: 0.9em !important;
+  padding: 5px 12px;
+}
+.option-input-control:focus {
+  border-radius: 4px 4px 0 0;
+  outline: none;
+  border-bottom: 2px solid #8963bb;
+}

@@ -1,0 +1,200 @@
+.form-list {
+  width: 100%;
+  height: 100%;
+}
+.form-list-item-container {
+  padding: 10px;
+}
+.form-list-item {
+  // border: 1px solid #e9e9e9;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between !important;
+  height: 100%;
+  align-items: flex-start;
+  // box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 1px -1px #00000033, 0 1px 1px 0 #00000024,
+    0 1px 3px 0 #0000001f;
+  //   padding: 20px;
+  border: 1px solid #dadce0;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+
+  .active {
+    color: #472e68;
+  }
+  .inactive {
+    color: #949494;
+  }
+}
+.form-list-item-count-response {
+  // border-radius: 10px;
+  // padding: 1px 10px;
+  // border: 1px solid rgb(122, 255, 122);
+  font-size: 0.85em;
+  color: #646464;
+  // background-color: rgb(0, 71, 0);
+}
+.form-list-item:hover {
+  // background-color: #fbfbfb;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: 1px solid #472e68;
+}
+.form-list-item-header {
+  width: 100%;
+  padding: 10px 10px 5px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-bottom: 1px solid #e9e9e9;
+}
+.form-list-item-body {
+  width: 100%;
+  // height: 180px !important;
+  .active {
+    color: #472e68 !important;
+  }
+}
+.form-list-item-footer {
+  background-color: #f3f3f3;
+  border-top: 1px solid #e9e9e9;
+  width: 100%;
+  border-radius: 0 0 6px 6px;
+  padding: 10px;
+}
+.form-list-search-bar {
+  max-width: 400px !important;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+.form-list-item-title {
+  color: #472e68;
+  font-size: 1.1em;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.form-list-item-description {
+  color: #5f5f5f;
+  font-size: 0.8em;
+  text-align: left;
+  padding: 0 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  // white-space: nowrap;
+  width: 100%;
+  height: 100px !important;
+}
+
+.form-list-item-date {
+  color: #9b9b9b;
+  font-size: 0.8em;
+  text-align: left;
+}
+.form-list-item-link {
+  text-decoration: none !important;
+}
+.bg-owner-info {
+  background-color: #f6f0ff;
+  color: #614684;
+  font-weight: 500 !important;
+  font-size: 0.8em;
+  padding: 0.2em 0.4em;
+  padding-right: 0.7em;
+  border: 1px solid #efe1ff;
+}
+.bg-active-info {
+  // background-color: #f6f0ff;
+  background-color: white;
+  color: #614684;
+  font-weight: 500 !important;
+  font-size: 0.8em;
+  padding: 0.1em;
+  padding-right: 0.7em;
+  border: 1px solid #efe1ff;
+}
+
+.form-survey-switch-tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: center;
+  border-radius: 10;
+  // width: 100%;
+
+  .left-tab {
+    border-radius: 4px 0 0 4px;
+    border: 1px solid #472e68;
+    width: 100%;
+    outline: none;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #472e68;
+    padding: 3px 10px;
+    font-size: 0.85em;
+    line-height: 1.5;
+
+    box-shadow: 0px -2px 2px 0px #00000036 inset;
+    cursor: pointer;
+  }
+  .right-tab {
+    color: #472e68;
+    border-radius: 0 4px 4px 0;
+    border: 1px solid #472e68;
+    width: 100%;
+    outline: none;
+    background: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    padding: 3px 10px;
+    font-size: 0.85em;
+    line-height: 1.5;
+
+    box-shadow: 0px -2px 2px 0px #00000036 inset;
+    cursor: pointer;
+  }
+  .active-tab {
+    background-color: #472e68 !important;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .form-list-item {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+    .right {
+      margin-left: 4px;
+      margin-top: 14px;
+      justify-content: flex-start !important;
+      font-size: 0.7em;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .form-list-search-bar {
+    max-width: 100% !important;
+    width: 100%;
+  }
+}

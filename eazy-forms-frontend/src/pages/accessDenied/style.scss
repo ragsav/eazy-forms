@@ -1,0 +1,19 @@
+.access-denied {
+  height: calc(100vh - 95px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form-not-found-image {
+  width: 300px;
+  height: 300px;
+}
+.form-not-found-title {
+  font-size: 1.9em;
+  color: #8591a4;
+}
+.form-not-found-404 {
+  color: #fd7f7f;
+}
